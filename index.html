@@ -31,7 +31,7 @@
       "@type": "WebSite",
       "name": "Twin Cities EV Installer Directory",
       "alternateName": "TC EV Installers",
-      "url": "https://tcevinstallers.com",
+      "url": "https://twincitiessolarevinstallers.com",
       "description": "Curated directory of licensed EV charger installers in the Twin Cities metropolitan area",
       "publisher": {
         "@type": "Organization",
@@ -39,7 +39,7 @@
       },
       "potentialAction": {
         "@type": "SearchAction",
-        "target": "https://tcevinstallers.com/search?q={search_term_string}",
+        "target": "https://twincitiessolarevinstallers.com/search?q={search_term_string}",
         "query-input": "required name=search_term_string"
       }
     }
@@ -152,7 +152,9 @@
                 <button type="button" class="modal-close" onclick="closeContactModal()">&times;</button>
             </div>
             <div class="modal-body">
-                <form class="modal-form" id="contact-form">
+                <form class="modal-form" id="contact-form" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+                    <input type="hidden" name="form-name" value="contact">
+                    <p class="hidden" style="display:none;"><label>Don't fill this out: <input name="bot-field"></label></p>
                     <div class="modal-field">
                         <label for="modal-name">Name *</label>
                         <input type="text" id="modal-name" name="name" required>
@@ -231,55 +233,55 @@
                 <div class="area-group">
                     <h3>Minneapolis Area</h3>
                     <ul>
-                        <li>Minneapolis</li>
-                        <li>St. Louis Park</li>
-                        <li>Edina</li>
-                        <li>Richfield</li>
-                        <li>Golden Valley</li>
+                        <li><a href="/minneapolis">Minneapolis</a></li>
+                        <li><a href="/st-louis-park">St. Louis Park</a></li>
+                        <li><a href="/edina">Edina</a></li>
+                        <li><a href="/richfield">Richfield</a></li>
+                        <li><a href="/golden-valley">Golden Valley</a></li>
                     </ul>
                 </div>
                 
                 <div class="area-group">
                     <h3>St. Paul Area</h3>
                     <ul>
-                        <li>St. Paul</li>
-                        <li>Roseville</li>
-                        <li>Maplewood</li>
-                        <li>Shoreview</li>
-                        <li>White Bear Lake</li>
+                        <li><a href="/st-paul">St. Paul</a></li>
+                        <li><a href="/roseville">Roseville</a></li>
+                        <li><a href="/maplewood">Maplewood</a></li>
+                        <li><a href="/shoreview">Shoreview</a></li>
+                        <li><a href="/white-bear-lake">White Bear Lake</a></li>
                     </ul>
                 </div>
                 
                 <div class="area-group">
                     <h3>South Metro</h3>
                     <ul>
-                        <li>Bloomington</li>
-                        <li>Eagan</li>
-                        <li>Burnsville</li>
-                        <li>Apple Valley</li>
-                        <li>Lakeville</li>
+                        <li><a href="/bloomington">Bloomington</a></li>
+                        <li><a href="/eagan">Eagan</a></li>
+                        <li><a href="/burnsville">Burnsville</a></li>
+                        <li><a href="/apple-valley">Apple Valley</a></li>
+                        <li><a href="/lakeville">Lakeville</a></li>
                     </ul>
                 </div>
                 
                 <div class="area-group">
                     <h3>West Metro</h3>
                     <ul>
-                        <li>Plymouth</li>
-                        <li>Minnetonka</li>
-                        <li>Eden Prairie</li>
-                        <li>Hopkins</li>
-                        <li>Wayzata</li>
+                        <li><a href="/plymouth">Plymouth</a></li>
+                        <li><a href="/minnetonka">Minnetonka</a></li>
+                        <li><a href="/eden-prairie">Eden Prairie</a></li>
+                        <li><a href="/hopkins">Hopkins</a></li>
+                        <li><a href="/wayzata">Wayzata</a></li>
                     </ul>
                 </div>
                 
                 <div class="area-group">
                     <h3>North Metro</h3>
                     <ul>
-                        <li>Maple Grove</li>
-                        <li>Brooklyn Park</li>
-                        <li>Blaine</li>
-                        <li>Coon Rapids</li>
-                        <li>Anoka</li>
+                        <li><a href="/maple-grove">Maple Grove</a></li>
+                        <li><a href="/brooklyn-park">Brooklyn Park</a></li>
+                        <li><a href="/blaine">Blaine</a></li>
+                        <li><a href="/coon-rapids">Coon Rapids</a></li>
+                        <li><a href="/anoka">Anoka</a></li>
                     </ul>
                 </div>
             </div>
@@ -587,7 +589,7 @@
             <div class="cta-content">
                 <h2 class="cta-title">Licensed MN EV Installer?</h2>
                 <p class="cta-text">Join our curated directory and connect with homeowners ready to install. Featured carousel listings and enhanced profiles available.</p>
-                <a href="mailto:hello@tcevinstallers.com" class="btn-primary-large">Get Listed</a>
+                <a href="mailto:beng@apadanatech.com?subject=Get%20Listed%20Inquiry" class="btn-primary-large">Get Listed</a>
                 <a href="./estimate.html" class="btn-primary-large" style="margin-left:12px;background:#fff;color:#2563eb;">Cost Estimator</a>
             </div>
         </div>
@@ -624,7 +626,7 @@
                     <div class="footer-col">
                         <h4>About</h4>
                         <a href="#">About Us</a>
-                        <a href="mailto:hello@tcevinstallers.com">Contact</a>
+                        <a href="mailto:beng@apadanatech.com">Contact</a>
                         <a href="#">Privacy Policy</a>
                         <a href="#">Terms of Service</a>
                     </div>
@@ -780,11 +782,4 @@
       }
 
       // Update "View All" button text
-      const viewAllBtn = document.querySelector('.view-more .btn-outline');
-      if (viewAllBtn) {
-        viewAllBtn.textContent = `View All ${installers.length} Installers →`;
-      }
-    })();
-    </script>
-</body>
-</html>
+      const viewAllBtn = d
