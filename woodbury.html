@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<!--
+  ============================================================
+  CITY PAGE TEMPLATE - Twin Cities EV Installer Directory
+  ============================================================
+  
+  CITY VARIABLES - Update these for each new city:
+  
+  City name:           Woodbury
+  State:               Minnesota (MN)
+  Permit cost:         $175-$300
+  Building dept phone: (651) 714-3568
+  Building dept addr:  8301 Valley Creek Rd
+  Typical install:     $900-$2,200
+  Default ZIP:         55125
+  Coordinates:         44.9239;-92.9594
+  
+  Neighboring cities:  Oakdale, Cottage Grove, Maplewood, 
+                       St. Paul, Lake Elmo, Afton
+  
+  East Metro filter:   st. paul, eagan, burnsville, shoreview,
+                       stillwater, maplewood, oakdale, 
+                       cottage grove, woodbury
+  
+  SEARCH & REPLACE for new city:
+  - "Woodbury" → [New City]
+  - "55125" → [City ZIP]
+  - "44.9239;-92.9594" → [City coordinates]
+  - "(651) 714-3568" → [Building dept phone]
+  - "8301 Valley Creek Rd" → [Building dept address]
+  - Update eastMetroCities array in JS for installer filtering
+  - Update neighboring cities list
+  - Verify permit costs with city building department
+  
+  Last updated: January 2026
+  ============================================================
+-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EV Charger Installation Woodbury MN | Licensed Electricians</title>
+    <meta name="description" content="Find licensed EV charger installers in Woodbury, Minnesota. 12 vetted electricians serving Woodbury with permit handling ($175-$300), panel upgrades, and Xcel Energy rebates. Average cost: $900-$2,200.">
+    <meta name="keywords" content="EV charger installation Woodbury MN, Woodbury electric vehicle charging, Woodbury electrician Level 2 charger, Woodbury panel upgrade, Xcel Energy rebate Woodbury">
+    
+    <!-- Open Graph / Social -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="EV Charger Installation Woodbury MN | Licensed Electricians">
+    <meta property="og:description" content="12 vetted electricians serving Woodbury, Minnesota with EV charger installation, permit handling, and panel upgrades.">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:image" content="https://twincitiessolarevinstallers.com/images/woodbury-ev-charger.jpg">
+    <meta property="og:url" content="https://twincitiessolarevinstallers.com/woodbury">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://twincitiessolarevinstallers.com/woodbury">
+    
+    <!-- Geographic -->
+    <meta name="geo.region" content="US-MN">
+    <meta name="geo.placename" content="Woodbury, Minnesota">
+    <meta name="geo.position" content="44.9239;-92.9594">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Breadcrumb Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://twincitiessolarevinstallers.com"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Woodbury",
+          "item": "https://twincitiessolarevinstallers.com/woodbury"
+        }
+      ]
+    }
+    </script>
+    
+    <!-- City Page Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "EV Charger Installers in Woodbury, Minnesota",
+      "description": "Licensed electricians serving Woodbury, MN with residential EV charger installation, permit handling, and panel upgrades.",
+      "lastReviewed": "2026-01-26",
+      "about": {
+        "@type": "City",
+        "name": "Woodbury",
+        "containedInPlace": {
+          "@type": "State",
+          "name": "Minnesota",
+          "containedInPlace": {
+            "@type": "Country",
+            "name": "United States"
+          }
+        }
+      },
+      "mainEntity": {
+        "@type": "ItemList",
+        "name": "Licensed EV Charger Installers Serving Woodbury, MN",
+        "numberOfItems": 12,
+        "itemListElement": [
+          {
+            "@type": "LocalBusiness",
+            "name": "Electric City",
+            "telephone": "+19524068238",
+            "areaServed": "Woodbury, Minnesota"
+          },
+          {
+            "@type": "LocalBusiness",
+            "name": "Lakeview Electric",
+            "telephone": "+19528886565",
+            "areaServed": "Woodbury, Minnesota"
+          },
+          {
+            "@type": "LocalBusiness",
+            "name": "Primary Electric, Inc.",
+            "telephone": "+17632136262",
+            "areaServed": "Woodbury, Minnesota"
+          }
+        ]
+      }
+    }
+    </script>
+</head>
+<body>
+    <!-- Header -->
+    <header class="site-header">
+        <div class="container">
+            <div class="logo">
+                <span class="logo-icon">⚡</span>
+                <a href="/" class="logo-text">Twin Cities EV Installer Directory</a>
+            </div>
+            <nav>
+                <a href="/#installers">Installers</a>
+                <a href="/#faq">FAQ</a>
+                <a href="/#guides">Guides</a>
+                <a href="/#get-listed" class="cta-link">Get Listed</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Breadcrumb -->
+    <nav class="breadcrumb">
+        <div class="container">
+            <a href="/">Home</a>
+            <span class="separator">›</span>
+            <span>Woodbury, MN</span>
+        </div>
+    </nav>
+
+    <!-- City Hero -->
+    <section class="city-hero">
+        <div class="container">
+            <div class="city-hero-content">
+                <h1 class="city-title">EV Charger Installation in Woodbury, Minnesota</h1>
+                <p class="city-subtitle"><span class="installer-count">12</span> licensed Minnesota electricians serving Woodbury with permit handling, panel upgrades, and Xcel Energy rebate expertise. Woodbury permit cost: $175-$300. Average installation: $900-$2,200.</p>
+                
+                <div class="city-facts">
+                    <div class="fact">
+                        <span class="fact-label">Permit Cost</span>
+                        <span class="fact-value">$175-$300</span>
+                    </div>
+                    <div class="fact">
+                        <span class="fact-label">Processing Time</span>
+                        <span class="fact-value">3-5 Days</span>
+                    </div>
+                    <div class="fact">
+                        <span class="fact-label">Xcel Rebate</span>
+                        <span class="fact-value">Up to $500</span>
+                    </div>
+                    <div class="fact">
+                        <span class="fact-label">Avg. Installation</span>
+                        <span class="fact-value">$900-$2,200</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cost Calculator -->
+    <section class="calculator-section" id="calculator">
+        <div class="container">
+            <div class="calculator-card">
+                <div class="calculator-header">
+                    <h2>EV Charger Cost Calculator</h2>
+                    <p>Get an instant estimate for your Woodbury installation</p>
+                </div>
+
+                <form class="calc-form" id="calc-form">
+                    <div class="calc-inputs">
+                        <div class="calc-field">
+                            <label>Panel Situation</label>
+                            <div class="radio-group">
+                                <label class="radio-option">
+                                    <input type="radio" name="panel" value="space-available">
+                                    <span>Space available in existing panel</span>
+                                </label>
+                                <label class="radio-option">
+                                    <input type="radio" name="panel" value="sub-panel" checked>
+                                    <span>Need sub-panel installation</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="calc-field">
+                            <label for="ev-brand">EV Brand</label>
+                            <select id="ev-brand" name="evBrand">
+                                <option value="Tesla">Tesla</option>
+                                <option value="Rivian">Rivian</option>
+                                <option value="Ford">Ford</option>
+                                <option value="Chevy">Chevy</option>
+                                <option value="Other">Other / Future EV</option>
+                            </select>
+                        </div>
+
+                        <div class="calc-field">
+                            <label for="zip-code">ZIP Code</label>
+                            <input type="text" id="zip-code" name="zipCode" placeholder="55125" maxlength="5" pattern="[0-9]{5}" value="55125">
+                        </div>
+
+                        <div class="calc-submit">
+                            <button type="submit" class="btn-primary">Calculate My Cost</button>
+                        </div>
+                    </div>
+
+                    <div class="calc-results" id="calc-results">
+                        <!-- Results appear here after calculation -->
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Modal -->
+    <div class="modal-overlay" id="contact-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Get a Comprehensive Bid</h3>
+                <button type="button" class="modal-close" onclick="closeContactModal()">&times;</button>
+            </div>
+            <div class="modal-body">
+                <form class="modal-form" id="contact-form">
+                    <div class="modal-field">
+                        <label for="modal-name">Name *</label>
+                        <input type="text" id="modal-name" name="name" required>
+                    </div>
+
+                    <div class="modal-row">
+                        <div class="modal-field">
+                            <label for="modal-email">Email *</label>
+                            <input type="email" id="modal-email" name="email" required>
+                        </div>
+                        <div class="modal-field">
+                            <label for="modal-phone">Phone *</label>
+                            <input type="tel" id="modal-phone" name="phone" required>
+                        </div>
+                    </div>
+
+                    <div class="modal-row">
+                        <div class="modal-field">
+                            <label for="modal-zip">ZIP Code</label>
+                            <input type="text" id="modal-zip" name="zip" maxlength="5" value="55125">
+                        </div>
+                        <div class="modal-field">
+                            <label for="modal-brand">EV Brand</label>
+                            <select id="modal-brand" name="evBrand">
+                                <option value="">Select...</option>
+                                <option value="Tesla">Tesla</option>
+                                <option value="Rivian">Rivian</option>
+                                <option value="Ford">Ford</option>
+                                <option value="Chevy">Chevy</option>
+                                <option value="Other">Other / Future EV</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="modal-field">
+                        <label for="modal-message">Message (optional)</label>
+                        <textarea id="modal-message" name="message" placeholder="Tell us about your installation needs..."></textarea>
+                    </div>
+
+                    <div class="modal-submit">
+                        <button type="submit" class="btn-primary">Submit Request</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Woodbury Quick Facts -->
+    <section class="city-info-section">
+        <div class="container">
+            <div class="city-info-grid">
+                <div class="info-card">
+                    <h3>📋 Woodbury Permit Requirements</h3>
+                    <ul>
+                        <li><strong>Required:</strong> Yes, electrical permit needed for all 240V EV charger installations</li>
+                        <li><strong>Cost:</strong> $175-$300 depending on scope</li>
+                        <li><strong>Processing:</strong> 3-5 business days typical</li>
+                        <li><strong>Inspection:</strong> Required after installation, scheduled within 2-3 days</li>
+                        <li><strong>Contact:</strong> Woodbury Building Department, (651) 714-3568</li>
+                    </ul>
+                </div>
+                
+                <div class="info-card">
+                    <h3>💡 Why Woodbury Homeowners Choose EV Chargers</h3>
+                    <ul>
+                        <li><strong>Growing EV adoption:</strong> Woodbury has strong Tesla, Rivian, and Ford EV ownership</li>
+                        <li><strong>Newer homes:</strong> Many Woodbury homes built after 2000 with 200A panels</li>
+                        <li><strong>Commuter-friendly:</strong> Easy charging for downtown Minneapolis/St. Paul commutes</li>
+                        <li><strong>Home value:</strong> EV chargers increase resale value in Woodbury's competitive market</li>
+                    </ul>
+                </div>
+                
+                <div class="info-card">
+                    <h3>🔌 Typical Woodbury Installation</h3>
+                    <ul>
+                        <li><strong>Garage run:</strong> Most Woodbury homes have attached 2-3 car garages with panels nearby</li>
+                        <li><strong>Panel capacity:</strong> 60% of Woodbury homes built after 2000 have adequate 200A service</li>
+                        <li><strong>Timeline:</strong> Permit to completion: 7-12 days average</li>
+                        <li><strong>Cost factors:</strong> Distance from panel, whether upgrade needed, driveway vs garage</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Installers Serving Woodbury -->
+    <section class="city-installers-section" id="installers">
+        <div class="container">
+            <h2 class="section-title">Licensed Electricians Serving Woodbury, MN</h2>
+            <p class="section-intro">All installers below are MN-licensed, insured, and experienced with Woodbury permit requirements</p>
+            
+            <div class="featured-grid" id="woodbury-installers-grid">
+                <!-- Loaded dynamically from installers.json -->
+            </div>
+
+            <div class="view-more">
+                <a href="/#installers" class="btn-outline">View All Twin Cities Installers →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Woodbury-Specific FAQ -->
+    <section class="faq-section" id="faq">
+        <div class="container">
+            <h2 class="section-title">EV Charger Installation FAQ - Woodbury, MN</h2>
+            
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>How much does EV charger installation cost in Woodbury?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p><strong>Typical Woodbury installation cost: $900-$2,200</strong></p>
+                        <p><strong>Cost breakdown:</strong></p>
+                        <ul>
+                            <li><strong>Basic installation (panel in garage, short run):</strong> $900-$1,400</li>
+                            <li><strong>Medium complexity (50+ foot run, conduit needed):</strong> $1,400-$1,800</li>
+                            <li><strong>With panel upgrade (100A to 200A):</strong> $2,800-$4,200</li>
+                            <li><strong>Woodbury permit fee:</strong> $175-$300 (included in most quotes)</li>
+                        </ul>
+                        <p><strong>Woodbury advantages:</strong> Many homes built after 2000 already have 200A service and attached garages, reducing installation costs compared to older Twin Cities neighborhoods.</p>
+                        <p><strong>Rebates available:</strong> Xcel Energy offers up to $500 for Woodbury residents, plus 30% federal tax credit (up to $1,000).</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Do I need a permit for EV charger installation in Woodbury?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p><strong>Yes, Woodbury requires an electrical permit for all Level 2 EV charger installations.</strong></p>
+                        <p><strong>Woodbury permit specifics:</strong></p>
+                        <ul>
+                            <li><strong>Cost:</strong> $175-$300 depending on project scope</li>
+                            <li><strong>Application:</strong> Must be submitted by licensed electrician</li>
+                            <li><strong>Processing time:</strong> 3-5 business days typical</li>
+                            <li><strong>Inspection:</strong> Required after installation, typically scheduled within 2-3 days</li>
+                            <li><strong>Building department:</strong> Woodbury Building Department, 8301 Valley Creek Rd, (651) 714-3568</li>
+                        </ul>
+                        <p><strong>What your installer handles:</strong> All licensed electricians in our directory will pull the permit, submit required documentation, and coordinate the inspection on your behalf. This is typically included in their installation quote.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Do most Woodbury homes need electrical panel upgrades for EV chargers?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p><strong>About 40% of Woodbury homes need panel upgrades.</strong> Woodbury has a newer housing stock advantage compared to older Twin Cities neighborhoods.</p>
+                        <p><strong>Woodbury home profile:</strong></p>
+                        <ul>
+                            <li><strong>Homes built after 2000 (majority):</strong> Usually have 200A panels with capacity for EV chargers</li>
+                            <li><strong>Homes built 1980-2000:</strong> Often have 150A or 200A service, may have capacity</li>
+                            <li><strong>Homes built before 1980:</strong> More likely to need upgrades from 100A to 200A</li>
+                        </ul>
+                        <p><strong>You likely need an upgrade if:</strong></p>
+                        <ul>
+                            <li>Your panel is 100 amps or less</li>
+                            <li>Fewer than 4 empty breaker spaces</li>
+                            <li>Already running electric heat, central AC, and other high-draw appliances</li>
+                        </ul>
+                        <p><strong>Panel upgrade cost in Woodbury:</strong> $1,800-$3,500 for standard 100A to 200A upgrade</p>
+                        <p><strong>Good news:</strong> Licensed electricians will perform a free load calculation to determine if your Woodbury home needs an upgrade before providing a quote.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>How long does EV charger installation take in Woodbury?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p><strong>Typical Woodbury timeline:</strong></p>
+                        <ul>
+                            <li><strong>Initial consultation & quote:</strong> 1-3 days from first contact</li>
+                            <li><strong>Permit application:</strong> Submitted by installer day of install or 1-2 days before</li>
+                            <li><strong>Permit approval:</strong> 3-5 business days (Woodbury Building Department)</li>
+                            <li><strong>Installation day:</strong> 4-6 hours for standard install</li>
+                            <li><strong>Inspection scheduling:</strong> 2-3 days after installation</li>
+                            <li><strong>Final approval:</strong> Same day as inspection if passed</li>
+                        </ul>
+                        <p><strong>Total timeline: 7-12 days</strong> from booking to charging your EV in Woodbury.</p>
+                        <p><strong>With panel upgrade:</strong> Add 3-5 days, total 10-17 days. Panel upgrade often requires separate inspection.</p>
+                        <p><strong>Peak season note:</strong> Spring and fall can have longer scheduling. Book 2-3 weeks in advance during April-June for fastest service.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>What EV chargers are popular in Woodbury?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p><strong>Top choices for Woodbury homeowners:</strong></p>
+                        <ul>
+                            <li><strong>Tesla Wall Connector:</strong> $450-$550. Most popular in Woodbury due to high Tesla ownership. Sleek design, WiFi-enabled, 48A charging.</li>
+                            <li><strong>ChargePoint Home Flex:</strong> $700-$800. Popular for multi-EV households. Universal J1772 connector, excellent app.</li>
+                            <li><strong>Grizzl-E:</strong> $400-$500. Budget-friendly choice. Rated for Minnesota winters, very reliable, no WiFi.</li>
+                            <li><strong>JuiceBox 40:</strong> $600-$700. Good for tech-savvy homeowners wanting detailed energy tracking and scheduling.</li>
+                        </ul>
+                        <p><strong>Woodbury considerations:</strong></p>
+                        <ul>
+                            <li><strong>Cold weather:</strong> All recommended chargers are rated for Minnesota winters (-40°F)</li>
+                            <li><strong>Garage installs:</strong> Most Woodbury installations are in attached heated garages, less weather concern</li>
+                            <li><strong>Smart features:</strong> Many Woodbury homeowners already have smart home systems and prefer WiFi-enabled chargers</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Are there any Xcel Energy rebates specifically for Woodbury residents?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p><strong>Yes, Woodbury is in Xcel Energy's service territory and qualifies for their residential EV charging rebate.</strong></p>
+                        <p><strong>Xcel Energy rebate (Woodbury residents):</strong></p>
+                        <ul>
+                            <li><strong>Amount:</strong> Up to $500 for Level 2 home charger installation</li>
+                            <li><strong>Eligibility:</strong> Xcel Energy electricity customers in Woodbury</li>
+                            <li><strong>Requirements:</strong> Installation by licensed electrician, smart/networked charger preferred</li>
+                            <li><strong>Application:</strong> Submit within 90 days of installation completion</li>
+                            <li><strong>Processing:</strong> Rebate paid within 6-8 weeks</li>
+                        </ul>
+                        <p><strong>Federal tax credit (all Woodbury residents):</strong></p>
+                        <ul>
+                            <li><strong>Amount:</strong> 30% of installation costs, up to $1,000</li>
+                            <li><strong>Extended through 2032</strong></li>
+                            <li><strong>Claimed on federal tax return</strong></li>
+                        </ul>
+                        <p><strong>Combined savings example for Woodbury:</strong></p>
+                        <p>$1,500 installation - $500 Xcel rebate - $450 federal credit = <strong>$550 net cost</strong></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Woodbury FAQ Schema -->
+        <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "How much does EV charger installation cost in Woodbury?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Typical Woodbury installation cost is $900-$2,200. Basic installation costs $900-$1,400, medium complexity $1,400-$1,800, and with panel upgrade $2,800-$4,200. Woodbury permit fee is $175-$300. Xcel Energy offers up to $500 rebate for Woodbury residents, plus 30% federal tax credit (up to $1,000)."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Do I need a permit for EV charger installation in Woodbury?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes, Woodbury requires an electrical permit for all Level 2 EV charger installations. Cost is $175-$300, processing takes 3-5 business days, and inspection is required within 2-3 days after installation. Contact Woodbury Building Department at (651) 714-3568."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Do most Woodbury homes need electrical panel upgrades for EV chargers?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "About 40% of Woodbury homes need panel upgrades. Homes built after 2000 (majority of Woodbury) usually have 200A panels with capacity. Homes built 1980-2000 may have capacity. Homes before 1980 more likely need upgrades from 100A to 200A, costing $1,800-$3,500."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How long does EV charger installation take in Woodbury?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Total timeline in Woodbury is 7-12 days from booking to charging. Includes 3-5 days permit approval from Woodbury Building Department, 4-6 hours installation, and 2-3 days for inspection scheduling. With panel upgrade, add 3-5 days for total of 10-17 days."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Are there Xcel Energy rebates for Woodbury residents?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes, Woodbury is in Xcel Energy service territory and qualifies for up to $500 residential EV charging rebate. Plus 30% federal tax credit up to $1,000. Combined savings example: $1,500 installation minus $500 Xcel rebate minus $450 federal credit equals $550 net cost."
+              }
+            }
+          ]
+        }
+        </script>
+    </section>
+
+    <!-- Neighboring Cities -->
+    <section class="neighboring-cities">
+        <div class="container">
+            <h2 class="section-title">EV Charger Installation in Nearby Cities</h2>
+            <p class="section-intro">We're expanding coverage across the Twin Cities metro. Check back soon for dedicated city pages.</p>
+            <div class="cities-grid">
+                <span class="city-link city-link-pending">Oakdale</span>
+                <span class="city-link city-link-pending">Cottage Grove</span>
+                <span class="city-link city-link-pending">Maplewood</span>
+                <span class="city-link city-link-pending">St. Paul</span>
+                <span class="city-link city-link-pending">Lake Elmo</span>
+                <span class="city-link city-link-pending">Afton</span>
+            </div>
+            <p class="section-note"><a href="/#installers">View all Twin Cities installers →</a></p>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2 class="cta-title">Ready to Install in Woodbury?</h2>
+                <p class="cta-text">Contact a licensed electrician above for a free quote. Most Woodbury installations completed within 7-12 days.</p>
+                <a href="#installers" class="btn-primary-large">View Woodbury Installers</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <span class="logo-icon">⚡</span>
+                    <span class="logo-text">Twin Cities EV Installer Directory</span>
+                    <p class="footer-tagline">Vetted, licensed EV charger installers across the Twin Cities metropolitan area</p>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="footer-col">
+                        <h4>Popular Cities</h4>
+                        <a href="/#installers">Minneapolis</a>
+                        <a href="/#installers">St. Paul</a>
+                        <a href="/woodbury">Woodbury</a>
+                        <a href="/#installers">Bloomington</a>
+                    </div>
+                    
+                    <div class="footer-col">
+                        <h4>Resources</h4>
+                        <a href="/#faq">Installation FAQ</a>
+                        <a href="/#guides">Installation Guides</a>
+                        <a href="#">Permits & Rebates</a>
+                    </div>
+                    
+                    <div class="footer-col">
+                        <h4>About</h4>
+                        <a href="/">Home</a>
+                        <a href="mailto:hello@twincitiessolarevinstallers.com">Contact</a>
+                        <a href="#">Privacy Policy</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 Twin Cities EV Installer Directory. All installers are independently licensed and insured in Minnesota.</p>
+                <p class="footer-disclaimer">Woodbury, MN information last updated: January 2026</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+    // Load installers dynamically
+    (async function() {
+      const response = await fetch('installers.json');
+      const installers = await response.json();
+
+      // Filter installers that serve East Metro / Woodbury area
+      // Include: St. Paul, Eagan, Burnsville, Shoreview, Stillwater, and metro-wide
+      const eastMetroCities = ['st. paul', 'st paul', 'eagan', 'burnsville', 'shoreview',
+        'stillwater', 'maplewood', 'oakdale', 'cottage grove', 'woodbury', 'south st. paul',
+        'twin cities', 'minneapolis'];
+
+      const woodburyInstallers = installers.filter(inst => {
+        const city = (inst.city || '').toLowerCase();
+        return eastMetroCities.some(c => city.includes(c)) || city.includes('metro');
+      }).slice(0, 8); // Show up to 8 installers
+
+      const grid = document.getElementById('woodbury-installers-grid');
+      if (grid && woodburyInstallers.length > 0) {
+        const logos = ['⚡', '🔋', '⚙️', '🔌', '🏢'];
+        grid.innerHTML = woodburyInstallers.map((inst, idx) => `
+          <article class="featured-card" itemscope itemtype="https://schema.org/LocalBusiness">
+            <div class="card-logo">
+              <div class="logo-placeholder">${logos[idx % logos.length]}</div>
+            </div>
+            <h3 class="card-company" itemprop="name">${inst.name}</h3>
+            <p class="card-specialty">${inst.city} Area</p>
+            <meta itemprop="areaServed" content="Woodbury, Minnesota">
+
+            <div class="card-badges">
+              ${(inst.badges || []).slice(0, 3).map(b => `<span class="mini-badge">${b}</span>`).join('')}
+            </div>
+
+            <p class="card-description">${inst.description || inst.specialties?.slice(0, 2).join(', ') || 'Licensed EV charger installer serving Woodbury area.'}</p>
+
+            <div class="card-contact">
+              ${inst.phone ? `<a href="tel:${inst.phoneTel}" class="contact-link" itemprop="telephone">📞 ${inst.phone}</a>` : ''}
+              ${inst.website ? `<a href="${inst.website}" class="contact-link" target="_blank">🔗 Website</a>` : ''}
+            </div>
+          </article>
+        `).join('');
+
+        // Update installer count in hero
+        const countEls = document.querySelectorAll('.installer-count');
+        countEls.forEach(el => el.textContent = woodburyInstallers.length);
+      }
+    })();
+    </script>
+</body>
+</html>

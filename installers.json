@@ -1,0 +1,969 @@
+[
+  {
+    "id": "randy-s-electric-plumbing-brooklyn-park",
+    "name": "Randy's Electric & Plumbing",
+    "city": "Brooklyn Park",
+    "phone": "612-448-3109",
+    "phoneTel": "6124483109",
+    "website": "https://randyselectric.com",
+    "reviewsText": "4.8/5 (5,426)",
+    "contactPerson": null,
+    "description": "Full consultation, charger selection, permits, testing, Level 1-3 chargers",
+    "specialties": [
+      "Full consultation",
+      "charger selection",
+      "permits",
+      "testing",
+      "Level 1-3 chargers"
+    ],
+    "otherServices": [
+      "Electrical mast & meter repair",
+      "breaker panel service",
+      "emergency service"
+    ],
+    "badges": [
+      "📋 Permits",
+      "🔌 Panel Upgrades",
+      "⚡ 24/7"
+    ],
+    "featured": false,
+    "verified": true
+  },
+  {
+    "id": "affordable-electric-brooklyn-park",
+    "name": "Affordable Electric",
+    "city": "Brooklyn Park",
+    "phone": "612-331-8658",
+    "phoneTel": "6123318658",
+    "website": "https://affordable-electric.com",
+    "reviewsText": "4.4/5 (514)",
+    "contactPerson": null,
+    "description": "Tesla Certified Installer, Level 2 chargers, all major brands (ChargePoint, JuiceBox, Wallbox, Grizzl-E)",
+    "specialties": [
+      "Tesla Certified Installer",
+      "Level 2 chargers",
+      "all major brands (ChargePoint",
+      "JuiceBox",
+      "Wallbox",
+      "Grizzl-E)"
+    ],
+    "otherServices": [
+      "General electrical services",
+      "30+ years in business",
+      "2-year warranty on parts"
+    ],
+    "badges": [
+      "🚗 Tesla"
+    ],
+    "featured": false,
+    "verified": true
+  },
+  {
+    "id": "northern-mister-sparky-minneapolis",
+    "name": "Northern Mister Sparky",
+    "city": "Minneapolis",
+    "phone": "(763) 335-6890",
+    "phoneTel": "7633356890",
+    "website": "https://northernmistersparky.com",
+    "reviewsText": "5/5 (83)",
+    "contactPerson": null,
+    "description": "Level 2 chargers, code-compliant, dedicated 240V circuits, permit handling",
+    "specialties": [
+      "Level 2 chargers",
+      "code-compliant",
+      "dedicated 240V circuits",
+      "permit handling"
+    ],
+    "otherServices": [
+      "Financing available",
+      "surge protection",
+      "panel upgrades",
+      "24/7 emergency service"
+    ],
+    "badges": [
+      "📋 Permits",
+      "🔌 Panel Upgrades",
+      "💳 Financing",
+      "⚡ 24/7"
+    ],
+    "featured": false,
+    "verified": true
+  },
+  {
+    "id": "edison-electric-inc-minneapolis",
+    "name": "Edison Electric, Inc.",
+    "city": "Minneapolis",
+    "phone": "(612) 385-7864",
+    "phoneTel": "6123857864",
+    "website": "https://electrician-minneapolis.com",
+    "reviewsText": "4.9/5 (157)",
+    "contactPerson": null,
+    "description": "Residential EV charger installation, service upgrades, Level 2 chargers",
+    "specialties": [
+      "Residential EV charger installation",
+      "service upgrades",
+      "Level 2 chargers"
+    ],
+    "otherServices": [
+      "General electrical services",
+      "19 years experience",
+      "QMerit certified"
+    ],
+    "badges": [],
+    "featured": false,
+    "verified": true
+  },
+  {
+    "id": "norske-electric-hamel",
+    "name": "Norske Electric",
+    "city": "Hamel",
+    "phone": "(612) 444-2910",
+    "phoneTel": "6124442910",
+    "website": "https://norskeelectric.com",
+    "reviewsText": "4.1/5 (936)",
+    "contactPerson": null,
+    "description": "EV chargers, electric ovens/ranges, dryers, green electricity solutions",
+    "specialties": [
+      "EV chargers",
+      "electric ovens/ranges",
+      "dryers",
+      "green electricity solutions"
+    ],
+    "otherServices": [
+      "Residential electrical services",
+      "emergency service",
+      "panel upgrades"
+    ],
+    "badges": [
+      "🔌 Panel Upgrades",
+      "⚡ 24/7"
+    ],
+    "featured": false,
+    "verified": true
+  },
+  {
+    "id": "erickson-electric-company-st-cloud",
+    "name": "Erickson Electric Company",
+    "city": "St. Cloud",
+    "phone": "(320) 456-0652",
+    "phoneTel": "3204560652",
+    "website": "https://ericksonelectricmn.com",
+    "reviewsText": "4.5/5",
+    "contactPerson": null,
+    "description": "QMerit certified partner, Level 2 chargers, commercial solutions, code-compliant",
+    "specialties": [
+      "QMerit certified partner",
+      "Level 2 chargers",
+      "commercial solutions",
+      "code-compliant"
+    ],
+    "otherServices": [
+      "Serving since 1944",
+      "80+ years experience",
+      "residential & commercial"
+    ],
+    "badges": [
+      "🏢 Commercial"
+    ],
+    "featured": false,
+    "verified": true
+  },
+  {
+    "id": "lux-mechanical-st-paul",
+    "name": "Lux Mechanical",
+    "city": "St. Paul",
+    "phone": "651-778-1425",
+    "phoneTel": "6517781425",
+    "website": "https://luxmechanical.com",
+    "reviewsText": null,
+    "contactPerson": null,
+    "description": "Residential & commercial EV chargers, panel upgrades, code compliance",
+    "specialties": [
+      "Residential & commercial EV chargers",
+      "panel upgrades",
+      "code compliance"
+    ],
+    "otherServices": [
+      "HVAC and electrical services",
+      "control panel upgrades"
+    ],
+    "badges": [
+      "🔌 Panel Upgrades",
+      "🏢 Commercial"
+    ],
+    "featured": false,
+    "verified": true
+  },
+  {
+    "id": "dean-s-home-services-minneapolis",
+    "name": "Dean's Home Services",
+    "city": "Minneapolis",
+    "phone": "763-515-7881",
+    "phoneTel": "7635157881",
+    "website": "https://calldeans.com",
+    "reviewsText": "2.2/5 (5)",
+    "contactPerson": null,
+    "description": "Fast and effective EV charger installation, Level 2 chargers",
+    "specialties": [
+      "Fast and effective EV charger installation",
+      "Level 2 chargers"
+    ],
+    "otherServices": [
+      "HVAC",
+      "plumbing",
+      "electrical services",
+      "24/7 emergency service"
+    ],
+    "badges": [
+      "⚡ 24/7"
+    ],
+    "featured": false,
+    "verified": true
+  },
+  {
+    "id": "damyans-electric-inc-hopkins",
+    "name": "Damyans Electric Inc.",
+    "city": "Hopkins",
+    "phone": "612-616-9251",
+    "phoneTel": "6126169251",
+    "website": "https://damyanselectric.com",
+    "reviewsText": "3.3/5 (6)",
+    "contactPerson": null,
+    "description": "EV charger installation, electrical systems, Level 1-2 chargers",
+    "specialties": [
+      "EV charger installation",
+      "electrical systems",
+      "Level 1-2 chargers"
+    ],
+    "otherServices": [
+      "18+ years in business",
+      "residential electrical",
+      "panel upgrades"
+    ],
+    "badges": [
+      "🔌 Panel Upgrades"
+    ],
+    "featured": false,
+    "verified": true
+  },
+  {
+    "id": "pronto-heating-air-conditioning-edina",
+    "name": "Pronto Heating & Air Conditioning",
+    "city": "Edina",
+    "phone": "952-835-7777",
+    "phoneTel": "9528357777",
+    "website": "https://prontoheat.com",
+    "reviewsText": "2.6/5 (76)",
+    "contactPerson": null,
+    "description": "Ford, Tesla, ChargePoint chargers, off-peak equipment, Level 2 installation",
+    "specialties": [
+      "Ford",
+      "Tesla",
+      "ChargePoint chargers",
+      "off-peak equipment",
+      "Level 2 installation"
+    ],
+    "otherServices": [
+      "HVAC services",
+      "heating & cooling",
+      "plumbing",
+      "electrical"
+    ],
+    "badges": [
+      "🚗 Tesla"
+    ],
+    "featured": false,
+    "verified": true
+  },
+  {
+    "id": "isolar-mn-saint-paul-park",
+    "name": "iSolar MN",
+    "city": "Saint Paul Park",
+    "phone": "(651) 565-1140",
+    "phoneTel": "6515651140",
+    "website": "https://isolarmn.com",
+    "reviewsText": "5/5 (7)",
+    "contactPerson": "Ryan Ihle",
+    "description": "Enphase EV Chargers, 40/50/60 amp chargers, solar integration",
+    "specialties": [
+      "Enphase EV Chargers",
+      "40/50/60 amp chargers",
+      "solar integration"
+    ],
+    "otherServices": [
+      "Solar electrical integration",
+      "residential & commercial solar"
+    ],
+    "badges": [
+      "☀️ Solar",
+      "🏢 Commercial"
+    ],
+    "featured": false,
+    "verified": true
+  },
+  {
+    "id": "o-neill-electric-inc-stillwater",
+    "name": "O'Neill Electric Inc.",
+    "city": "Stillwater",
+    "phone": "651-342-0906",
+    "phoneTel": "6513420906",
+    "website": "https://oneillelectricmn.com",
+    "reviewsText": "5/5 (13)",
+    "contactPerson": "Ashley O'Neill",
+    "description": "ChargePoint, Tesla, EvoCharge chargers, commercial & residential",
+    "specialties": [
+      "ChargePoint",
+      "Tesla",
+      "EvoCharge chargers",
+      "commercial & residential"
+    ],
+    "otherServices": [
+      "24/7 emergency service",
+      "licensed & bonded",
+      "commercial & industrial"
+    ],
+    "badges": [
+      "🚗 Tesla",
+      "🏢 Commercial",
+      "⚡ 24/7"
+    ],
+    "featured": false,
+    "verified": true
+  },
+  {
+    "id": "mcquillan-bros-st-paul",
+    "name": "McQuillan Bros",
+    "city": "St. Paul",
+    "phone": "(651) 212-5828",
+    "phoneTel": "6512125828",
+    "website": "https://mcquillanbros.com",
+    "reviewsText": "1.5/5 (119)",
+    "contactPerson": null,
+    "description": "Same-day service, upfront pricing, Level 2 chargers",
+    "specialties": [
+      "Same-day service",
+      "upfront pricing",
+      "Level 2 chargers"
+    ],
+    "otherServices": [
+      "HVAC",
+      "plumbing",
+      "electrical services",
+      "24/7 emergency service"
+    ],
+    "badges": [
+      "⚡ 24/7"
+    ],
+    "featured": false,
+    "verified": true
+  },
+  {
+    "id": "finch-home-solutions-llc-savage",
+    "name": "Finch Home Solutions, LLC",
+    "city": "Savage",
+    "phone": "(651) 243-4711",
+    "phoneTel": "6512434711",
+    "website": "https://finchhomesolutions.com",
+    "reviewsText": "2.7/5 (12)",
+    "contactPerson": null,
+    "description": "Expert EV charging installation, Level 2 chargers, code-compliant",
+    "specialties": [
+      "Expert EV charging installation",
+      "Level 2 chargers",
+      "code-compliant"
+    ],
+    "otherServices": [
+      "Electrical services",
+      "HVAC",
+      "home solutions",
+      "24/7 service"
+    ],
+    "badges": [
+      "⚡ 24/7"
+    ],
+    "featured": false,
+    "verified": true
+  },
+  {
+    "id": "go-electric-llc-clear-lake",
+    "name": "Go Electric, LLC",
+    "city": "Clear Lake",
+    "phone": "(763) 291-0150",
+    "phoneTel": "7632910150",
+    "website": "https://goelectric-mn.com",
+    "reviewsText": "4.4/5 (1,012)",
+    "contactPerson": null,
+    "description": "Permit handling, code compliance, Level 2 chargers, 24/7 emergency",
+    "specialties": [
+      "Permit handling",
+      "code compliance",
+      "Level 2 chargers",
+      "24/7 emergency"
+    ],
+    "otherServices": [
+      "Residential electrical services",
+      "panel upgrades",
+      "rewiring"
+    ],
+    "badges": [
+      "📋 Permits",
+      "🔌 Panel Upgrades",
+      "⚡ 24/7"
+    ],
+    "featured": false,
+    "verified": true
+  },
+  {
+    "id": "twin-cities-electric-shakopee",
+    "name": "Twin Cities Electric",
+    "city": "Shakopee",
+    "phone": "(651) 245-4703",
+    "phoneTel": "6512454703",
+    "website": "https://twincitieselectricllc.com",
+    "reviewsText": "2.3/5 (3)",
+    "contactPerson": "Pete Cicconi",
+    "description": "Residential & commercial EV chargers, electrical switches & outlets",
+    "specialties": [
+      "Residential & commercial EV chargers",
+      "electrical switches & outlets"
+    ],
+    "otherServices": [
+      "General electrical services",
+      "panel upgrades",
+      "rewiring"
+    ],
+    "badges": [
+      "🔌 Panel Upgrades",
+      "🏢 Commercial"
+    ],
+    "featured": false,
+    "verified": true
+  },
+  {
+    "id": "jnh-electric-llc-minnetonka",
+    "name": "JNH Electric LLC",
+    "city": "Minnetonka",
+    "phone": "(612) 294-7187",
+    "phoneTel": "6122947187",
+    "website": "https://jnh-electric.com",
+    "reviewsText": null,
+    "contactPerson": null,
+    "description": "Professional EV charger installation, Level 2 chargers",
+    "specialties": [
+      "Professional EV charger installation",
+      "Level 2 chargers"
+    ],
+    "otherServices": [
+      "Residential electrical services"
+    ],
+    "badges": [],
+    "featured": false,
+    "verified": true
+  },
+  {
+    "id": "mr-electric-south-st-paul",
+    "name": "Mr. Electric",
+    "city": "South St. Paul",
+    "phone": "(612) 254-6671",
+    "phoneTel": "6122546671",
+    "website": "https://mrelectric.com",
+    "reviewsText": "4.5/5 (8)",
+    "contactPerson": null,
+    "description": "EV charger installation and replacement, Level 2 chargers",
+    "specialties": [
+      "EV charger installation and replacement",
+      "Level 2 chargers"
+    ],
+    "otherServices": [
+      "General electrical services",
+      "emergency service"
+    ],
+    "badges": [
+      "⚡ 24/7"
+    ],
+    "featured": false,
+    "verified": true
+  },
+  {
+    "id": "stafford-home-service-minneapolis",
+    "name": "Stafford Home Service",
+    "city": "Minneapolis",
+    "phone": "952-927-7194",
+    "phoneTel": "9529277194",
+    "website": "https://staffordhomeservice.com",
+    "reviewsText": null,
+    "contactPerson": "Jason Albert",
+    "description": "EV charger installation, electrical services, Level 2 chargers",
+    "specialties": [
+      "EV charger installation",
+      "electrical services",
+      "Level 2 chargers"
+    ],
+    "otherServices": [
+      "HVAC and home services",
+      "panel upgrades"
+    ],
+    "badges": [
+      "🔌 Panel Upgrades"
+    ],
+    "featured": false,
+    "verified": true
+  },
+  {
+    "id": "idcautomatic-minneapolis",
+    "name": "idcAutomatic",
+    "city": "Minneapolis",
+    "phone": "(763) 786-4730",
+    "phoneTel": "7637864730",
+    "website": "https://idc-automatic.com",
+    "reviewsText": null,
+    "contactPerson": null,
+    "description": "Expert EV charger installation, electrical work, automation",
+    "specialties": [
+      "Expert EV charger installation",
+      "electrical work",
+      "automation"
+    ],
+    "otherServices": [
+      "Garage door services",
+      "electrical automation",
+      "commercial doors"
+    ],
+    "badges": [
+      "🏢 Commercial"
+    ],
+    "featured": false,
+    "verified": true
+  },
+  {
+    "id": "electric-city-st-louis-park",
+    "name": "Electric City",
+    "city": "St. Louis Park",
+    "phone": "952-406-8238",
+    "phoneTel": "9524068238",
+    "website": "https://4frontenergy.com",
+    "reviewsText": null,
+    "contactPerson": "Kim Zimmer",
+    "description": "Xcel Energy certified, EV charger installation, Level 2 chargers",
+    "specialties": [
+      "Xcel Energy certified",
+      "EV charger installation",
+      "Level 2 chargers"
+    ],
+    "otherServices": [
+      "General electrical services",
+      "acquired by 4Front Energy"
+    ],
+    "badges": [
+      "💰 Rebates"
+    ],
+    "featured": false,
+    "verified": true
+  },
+  {
+    "id": "sherman-electric-minneapolis",
+    "name": "Sherman Electric",
+    "city": "Minneapolis",
+    "phone": "612-871-2407",
+    "phoneTel": "6128712407",
+    "website": "https://shermanelectric.godaddysites.com",
+    "reviewsText": "4.4/5 (7)",
+    "contactPerson": "Jim Sherman",
+    "description": "Xcel Energy certified, Level 2 chargers, smart home systems",
+    "specialties": [
+      "Xcel Energy certified",
+      "Level 2 chargers",
+      "smart home systems"
+    ],
+    "otherServices": [
+      "General electrical services",
+      "residential & commercial"
+    ],
+    "badges": [
+      "💰 Rebates",
+      "🏢 Commercial"
+    ],
+    "featured": false,
+    "verified": true
+  },
+  {
+    "id": "ray-of-light-electric-st-paul",
+    "name": "Ray of Light Electric",
+    "city": "St. Paul",
+    "phone": "651-276-2132",
+    "phoneTel": "6512762132",
+    "website": "https://rayoflightelectric.com",
+    "reviewsText": "4.9/5 (15)",
+    "contactPerson": "Adam Wortman",
+    "description": "Xcel Energy certified, EV charger installation, creative charging solutions",
+    "specialties": [
+      "Xcel Energy certified",
+      "EV charger installation",
+      "creative charging solutions"
+    ],
+    "otherServices": [
+      "General electrical services",
+      "green energy solutions"
+    ],
+    "badges": [
+      "💰 Rebates"
+    ],
+    "featured": false,
+    "verified": true
+  },
+  {
+    "id": "bluesky-electric-co-shoreview",
+    "name": "BlueSky Electric Co.",
+    "city": "Shoreview",
+    "phone": "612-723-4399",
+    "phoneTel": "6127234399",
+    "website": "https://blueskyelectricco.com",
+    "reviewsText": null,
+    "contactPerson": "Billy Parsons",
+    "description": "Xcel Energy certified, EV charger installation, solar PV systems",
+    "specialties": [
+      "Xcel Energy certified",
+      "EV charger installation",
+      "solar PV systems"
+    ],
+    "otherServices": [
+      "General electrical services",
+      "commercial & residential"
+    ],
+    "badges": [
+      "💰 Rebates",
+      "☀️ Solar",
+      "🏢 Commercial"
+    ],
+    "featured": false,
+    "verified": true
+  },
+  {
+    "id": "citywide-electric-inc-eagan",
+    "name": "Citywide Electric, Inc.",
+    "city": "Eagan",
+    "phone": "651-452-4887",
+    "phoneTel": "6514524887",
+    "website": null,
+    "reviewsText": null,
+    "contactPerson": "Lee Johnson",
+    "description": "Xcel Energy certified, EV charger installation, Level 2 chargers",
+    "specialties": [
+      "Xcel Energy certified",
+      "EV charger installation",
+      "Level 2 chargers"
+    ],
+    "otherServices": [
+      "General electrical services",
+      "residential & commercial"
+    ],
+    "badges": [
+      "💰 Rebates",
+      "🏢 Commercial"
+    ],
+    "featured": false,
+    "verified": true
+  },
+  {
+    "id": "current-electric-systems-plymouth",
+    "name": "Current Electric Systems",
+    "city": "Plymouth",
+    "phone": "612-567-2099",
+    "phoneTel": "6125672099",
+    "website": "https://currentelectricsystems.com",
+    "reviewsText": "5/5 (3)",
+    "contactPerson": "Jason Savageau",
+    "description": "Xcel Energy certified, EV charger installation, veteran-owned business",
+    "specialties": [
+      "Xcel Energy certified",
+      "EV charger installation",
+      "veteran-owned business"
+    ],
+    "otherServices": [
+      "General electrical services",
+      "industrial & commercial"
+    ],
+    "badges": [
+      "💰 Rebates",
+      "🏢 Commercial"
+    ],
+    "featured": false,
+    "verified": true
+  },
+  {
+    "id": "lakeview-electric-burnsville",
+    "name": "Lakeview Electric",
+    "city": "Burnsville",
+    "phone": "952-888-6565",
+    "phoneTel": "9528886565",
+    "website": "https://lakeviewelectric.com",
+    "reviewsText": null,
+    "contactPerson": "Karl Nohre",
+    "description": "Xcel Energy certified, EV charger installation, Level 2 chargers",
+    "specialties": [
+      "Xcel Energy certified",
+      "EV charger installation",
+      "Level 2 chargers"
+    ],
+    "otherServices": [
+      "General electrical services",
+      "panel upgrades",
+      "rewiring",
+      "veteran-owned"
+    ],
+    "badges": [
+      "🔌 Panel Upgrades",
+      "💰 Rebates"
+    ],
+    "featured": false,
+    "verified": true
+  },
+  {
+    "id": "midwest-electric-generation-inc-rogers",
+    "name": "Midwest Electric & Generation, Inc.",
+    "city": "Rogers",
+    "phone": "612-290-5225",
+    "phoneTel": "6122905225",
+    "website": null,
+    "reviewsText": null,
+    "contactPerson": "John Anderson",
+    "description": "Xcel Energy certified, EV charger installation, Level 2 chargers",
+    "specialties": [
+      "Xcel Energy certified",
+      "EV charger installation",
+      "Level 2 chargers"
+    ],
+    "otherServices": [
+      "General electrical services",
+      "generators"
+    ],
+    "badges": [
+      "💰 Rebates"
+    ],
+    "featured": false,
+    "verified": true
+  },
+  {
+    "id": "milow-electric-long-lake",
+    "name": "Milow Electric",
+    "city": "Long Lake",
+    "phone": "952-475-2270",
+    "phoneTel": "9524752270",
+    "website": null,
+    "reviewsText": null,
+    "contactPerson": "Dan Milow",
+    "description": "Xcel Energy certified, EV charger installation, Level 2 chargers",
+    "specialties": [
+      "Xcel Energy certified",
+      "EV charger installation",
+      "Level 2 chargers"
+    ],
+    "otherServices": [
+      "General electrical services",
+      "residential & commercial"
+    ],
+    "badges": [
+      "💰 Rebates",
+      "🏢 Commercial"
+    ],
+    "featured": false,
+    "verified": true
+  },
+  {
+    "id": "my-electrician-saint-louis-park",
+    "name": "My Electrician",
+    "city": "Saint Louis Park",
+    "phone": "612-234-4210",
+    "phoneTel": "6122344210",
+    "website": null,
+    "reviewsText": null,
+    "contactPerson": "Joe Goelz",
+    "description": "Xcel Energy certified, EV charger installation, Level 2 chargers",
+    "specialties": [
+      "Xcel Energy certified",
+      "EV charger installation",
+      "Level 2 chargers"
+    ],
+    "otherServices": [
+      "General electrical services"
+    ],
+    "badges": [
+      "💰 Rebates"
+    ],
+    "featured": false,
+    "verified": true
+  },
+  {
+    "id": "primary-electric-inc-maple-grove",
+    "name": "Primary Electric, Inc.",
+    "city": "Maple Grove",
+    "phone": "763-213-6262",
+    "phoneTel": "7632136262",
+    "website": null,
+    "reviewsText": null,
+    "contactPerson": "Chris Boettcher",
+    "description": "Xcel Energy certified, EV charger installation, Level 2 chargers",
+    "specialties": [
+      "Xcel Energy certified",
+      "EV charger installation",
+      "Level 2 chargers"
+    ],
+    "otherServices": [
+      "General electrical services",
+      "residential & commercial"
+    ],
+    "badges": [
+      "💰 Rebates",
+      "🏢 Commercial"
+    ],
+    "featured": false,
+    "verified": true
+  },
+  {
+    "id": "thor-electric-lakeville",
+    "name": "Thor Electric",
+    "city": "Lakeville",
+    "phone": "651-408-3348",
+    "phoneTel": "6514083348",
+    "website": null,
+    "reviewsText": null,
+    "contactPerson": "Kyle Yaedke",
+    "description": "Xcel Energy certified, EV charger installation, Level 2 chargers",
+    "specialties": [
+      "Xcel Energy certified",
+      "EV charger installation",
+      "Level 2 chargers"
+    ],
+    "otherServices": [
+      "General electrical services"
+    ],
+    "badges": [
+      "💰 Rebates"
+    ],
+    "featured": false,
+    "verified": true
+  },
+  {
+    "id": "tim-kunkel-electric-st-paul",
+    "name": "Tim Kunkel Electric",
+    "city": "St. Paul",
+    "phone": "651-353-1072",
+    "phoneTel": "6513531072",
+    "website": null,
+    "reviewsText": null,
+    "contactPerson": "Tim Kunkel",
+    "description": "Xcel Energy certified, EV charger installation, Level 2 chargers",
+    "specialties": [
+      "Xcel Energy certified",
+      "EV charger installation",
+      "Level 2 chargers"
+    ],
+    "otherServices": [
+      "General electrical services",
+      "residential"
+    ],
+    "badges": [
+      "💰 Rebates"
+    ],
+    "featured": false,
+    "verified": true
+  },
+  {
+    "id": "mj-electric-bloomington",
+    "name": "MJ Electric",
+    "city": "Bloomington",
+    "phone": "612-723-7509",
+    "phoneTel": "6127237509",
+    "website": null,
+    "reviewsText": null,
+    "contactPerson": "Bradley Hanson",
+    "description": "Xcel Energy certified, EV charger installation, Level 2 chargers",
+    "specialties": [
+      "Xcel Energy certified",
+      "EV charger installation",
+      "Level 2 chargers"
+    ],
+    "otherServices": [
+      "General electrical services"
+    ],
+    "badges": [
+      "💰 Rebates"
+    ],
+    "featured": false,
+    "verified": true
+  },
+  {
+    "id": "bakken-electric-llc-st-paul",
+    "name": "Bakken Electric, LLC",
+    "city": "St. Paul",
+    "phone": "651-203-8130",
+    "phoneTel": "6512038130",
+    "website": null,
+    "reviewsText": null,
+    "contactPerson": "Bryan Hayes",
+    "description": "Xcel Energy certified, EV charger installation, Level 2 chargers",
+    "specialties": [
+      "Xcel Energy certified",
+      "EV charger installation",
+      "Level 2 chargers"
+    ],
+    "otherServices": [
+      "General electrical services"
+    ],
+    "badges": [
+      "💰 Rebates"
+    ],
+    "featured": false,
+    "verified": true
+  },
+  {
+    "id": "golden-electric-plymouth",
+    "name": "Golden Electric",
+    "city": "Plymouth",
+    "phone": "763-412-5714",
+    "phoneTel": "7634125714",
+    "website": null,
+    "reviewsText": null,
+    "contactPerson": "Kevin Vickers",
+    "description": "Xcel Energy certified, EV charger installation, Level 2 chargers",
+    "specialties": [
+      "Xcel Energy certified",
+      "EV charger installation",
+      "Level 2 chargers"
+    ],
+    "otherServices": [
+      "General electrical services"
+    ],
+    "badges": [
+      "💰 Rebates"
+    ],
+    "featured": false,
+    "verified": true
+  },
+  {
+    "id": "aquarius-home-services-little-canada",
+    "name": "Aquarius Home Services",
+    "city": "Little Canada",
+    "phone": null,
+    "phoneTel": null,
+    "website": "https://aquariushomeservices.com",
+    "reviewsText": "4.7/5 (196)",
+    "contactPerson": null,
+    "description": "HVAC, Water Softeners, Plumbing, Electrical, EV chargers",
+    "specialties": [
+      "HVAC",
+      "Water Softeners",
+      "Plumbing",
+      "Electrical",
+      "EV chargers"
+    ],
+    "otherServices": [
+      "100% performance guarantee",
+      "Minnesota & Wisconsin service",
+      "39 years experience"
+    ],
+    "badges": [],
+    "featured": false,
+    "verified": true
+  }
+]

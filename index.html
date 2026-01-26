@@ -1,0 +1,790 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Twin Cities EV Installer Directory | 30 Vetted MN Electricians</title>
+    <meta name="description" content="Twin Cities EV Installer Directory: Find licensed EV charger installers in Minneapolis-St. Paul. Compare 30 vetted Minnesota electricians with permit handling, panel upgrades, and Xcel Energy rebate expertise. Cost: $800-$2,500. MN-licensed and insured.">
+    <meta name="keywords" content="EV charger installation Minneapolis, EV charger installer St Paul, Minnesota electric vehicle charging, Level 2 charger installation, panel upgrade electrician, Xcel Energy rebate">
+    
+    <!-- Open Graph / Social -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Twin Cities EV Installer Directory | Vetted & Licensed">
+    <meta property="og:description" content="30 vetted Minnesota electricians specializing in EV charger installation with permit handling and panel upgrades.">
+    <meta property="og:locale" content="en_US">
+    
+    <!-- Geographic -->
+    <meta name="geo.region" content="US-MN">
+    <meta name="geo.placename" content="Minneapolis-St. Paul">
+    <meta name="geo.position" content="44.9778;-93.2650">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Organization Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Twin Cities EV Installer Directory",
+      "alternateName": "TC EV Installers",
+      "url": "https://tcevinstallers.com",
+      "description": "Curated directory of licensed EV charger installers in the Twin Cities metropolitan area",
+      "publisher": {
+        "@type": "Organization",
+        "name": "Twin Cities EV Installer Directory"
+      },
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://tcevinstallers.com/search?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    }
+    </script>
+</head>
+<body>
+    <!-- Header -->
+    <header class="site-header">
+        <div class="container">
+            <div class="logo">
+                <span class="logo-icon">⚡</span>
+                <span class="logo-text">Twin Cities EV Installer Directory</span>
+            </div>
+            <nav>
+                <a href="#installers">Installers</a>
+                <a href="#faq">FAQ</a>
+                <a href="#guides">Guides</a>
+                <a href="#get-listed" class="cta-link">Get Listed</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Twin Cities EV Charger Installers Who Do It Right</h1>
+                <p class="hero-subtitle">Vetted, Minnesota-licensed electricians who handle permits, panel upgrades, and Xcel Energy rebates. No lead brokers, no runarounds—just licensed pros you can call today.</p>
+                <div class="service-locations">
+                    <p><strong>Serving:</strong> Minneapolis • St. Paul • Bloomington • Plymouth • Edina • St. Louis Park • Eagan • Burnsville • Maple Grove • Eden Prairie • Minnetonka • Richfield</p>
+                </div>
+                <a href="./estimate.html" class="btn-primary-large" style="margin-top:20px;">Cost Estimator</a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat">
+                    <span class="stat-number">30</span>
+                    <span class="stat-label">Verified Installers</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">100%</span>
+                    <span class="stat-label">MN Licensed</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">$500</span>
+                    <span class="stat-label">Xcel Rebate Available</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cost Calculator -->
+    <section class="calculator-section" id="calculator">
+        <div class="container">
+            <div class="calculator-card">
+                <div class="calculator-header">
+                    <h2>EV Charger Cost Calculator</h2>
+                    <p>Get an instant estimate for your Twin Cities installation</p>
+                </div>
+
+                <form class="calc-form" id="calc-form">
+                    <div class="calc-inputs">
+                        <div class="calc-field">
+                            <label>Panel Situation</label>
+                            <div class="radio-group">
+                                <label class="radio-option">
+                                    <input type="radio" name="panel" value="space-available">
+                                    <span>Space available in existing panel</span>
+                                </label>
+                                <label class="radio-option">
+                                    <input type="radio" name="panel" value="sub-panel" checked>
+                                    <span>Need sub-panel installation</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="calc-field">
+                            <label for="ev-brand">EV Brand</label>
+                            <select id="ev-brand" name="evBrand">
+                                <option value="Tesla">Tesla</option>
+                                <option value="Rivian">Rivian</option>
+                                <option value="Ford">Ford</option>
+                                <option value="Chevy">Chevy</option>
+                                <option value="Other">Other / Future EV</option>
+                            </select>
+                        </div>
+
+                        <div class="calc-field">
+                            <label for="zip-code">ZIP Code</label>
+                            <input type="text" id="zip-code" name="zipCode" placeholder="55401" maxlength="5" pattern="[0-9]{5}">
+                        </div>
+
+                        <div class="calc-submit">
+                            <button type="submit" class="btn-primary">Calculate My Cost</button>
+                        </div>
+                    </div>
+
+                    <div class="calc-results" id="calc-results">
+                        <!-- Results appear here after calculation -->
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Modal -->
+    <div class="modal-overlay" id="contact-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Get a Comprehensive Bid</h3>
+                <button type="button" class="modal-close" onclick="closeContactModal()">&times;</button>
+            </div>
+            <div class="modal-body">
+                <form class="modal-form" id="contact-form">
+                    <div class="modal-field">
+                        <label for="modal-name">Name *</label>
+                        <input type="text" id="modal-name" name="name" required>
+                    </div>
+
+                    <div class="modal-row">
+                        <div class="modal-field">
+                            <label for="modal-email">Email *</label>
+                            <input type="email" id="modal-email" name="email" required>
+                        </div>
+                        <div class="modal-field">
+                            <label for="modal-phone">Phone *</label>
+                            <input type="tel" id="modal-phone" name="phone" required>
+                        </div>
+                    </div>
+
+                    <div class="modal-row">
+                        <div class="modal-field">
+                            <label for="modal-zip">ZIP Code</label>
+                            <input type="text" id="modal-zip" name="zip" maxlength="5">
+                        </div>
+                        <div class="modal-field">
+                            <label for="modal-brand">EV Brand</label>
+                            <select id="modal-brand" name="evBrand">
+                                <option value="">Select...</option>
+                                <option value="Tesla">Tesla</option>
+                                <option value="Rivian">Rivian</option>
+                                <option value="Ford">Ford</option>
+                                <option value="Chevy">Chevy</option>
+                                <option value="Other">Other / Future EV</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="modal-field">
+                        <label for="modal-message">Message (optional)</label>
+                        <textarea id="modal-message" name="message" placeholder="Tell us about your installation needs..."></textarea>
+                    </div>
+
+                    <div class="modal-submit">
+                        <button type="submit" class="btn-primary">Submit Request</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Featured Carousel -->
+    <section class="carousel-section" id="featured">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Featured Installers</h2>
+                <div class="carousel-controls">
+                    <button class="carousel-btn prev" aria-label="Previous">←</button>
+                    <button class="carousel-btn next" aria-label="Next">→</button>
+                </div>
+            </div>
+            
+            <div class="carousel">
+                <div class="carousel-track" id="carousel-track">
+                    <!-- Rendered dynamically from installers.json -->
+                </div>
+
+                <div class="carousel-dots"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Areas Section -->
+    <section class="service-areas-section" id="service-areas">
+        <div class="container">
+            <h2 class="section-title">Service Areas Across the Twin Cities</h2>
+            <p class="section-intro">Our vetted installers serve all major Twin Cities metro communities</p>
+            
+            <div class="areas-grid">
+                <div class="area-group">
+                    <h3>Minneapolis Area</h3>
+                    <ul>
+                        <li>Minneapolis</li>
+                        <li>St. Louis Park</li>
+                        <li>Edina</li>
+                        <li>Richfield</li>
+                        <li>Golden Valley</li>
+                    </ul>
+                </div>
+                
+                <div class="area-group">
+                    <h3>St. Paul Area</h3>
+                    <ul>
+                        <li>St. Paul</li>
+                        <li>Roseville</li>
+                        <li>Maplewood</li>
+                        <li>Shoreview</li>
+                        <li>White Bear Lake</li>
+                    </ul>
+                </div>
+                
+                <div class="area-group">
+                    <h3>South Metro</h3>
+                    <ul>
+                        <li>Bloomington</li>
+                        <li>Eagan</li>
+                        <li>Burnsville</li>
+                        <li>Apple Valley</li>
+                        <li>Lakeville</li>
+                    </ul>
+                </div>
+                
+                <div class="area-group">
+                    <h3>West Metro</h3>
+                    <ul>
+                        <li>Plymouth</li>
+                        <li>Minnetonka</li>
+                        <li>Eden Prairie</li>
+                        <li>Hopkins</li>
+                        <li>Wayzata</li>
+                    </ul>
+                </div>
+                
+                <div class="area-group">
+                    <h3>North Metro</h3>
+                    <ul>
+                        <li>Maple Grove</li>
+                        <li>Brooklyn Park</li>
+                        <li>Blaine</li>
+                        <li>Coon Rapids</li>
+                        <li>Anoka</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section" id="faq">
+        <div class="container">
+            <h2 class="section-title">Common Questions About EV Charger Installation in Minnesota</h2>
+            
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>How much does EV charger installation cost in the Twin Cities?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>EV charger installation in Minneapolis-St. Paul typically costs <strong>$800-$2,500</strong>, depending on:</p>
+                        <ul>
+                            <li><strong>Distance from electrical panel:</strong> Shorter runs (under 25 feet) cost $800-$1,200</li>
+                            <li><strong>Panel upgrade requirements:</strong> If your panel needs upgrading from 100A to 200A, add $1,500-$2,500</li>
+                            <li><strong>Permit fees:</strong> Minneapolis $150-$250, St. Paul $175-$300</li>
+                            <li><strong>Charger brand:</strong> Tesla Wall Connector, ChargePoint Home Flex, and Grizzl-E are popular choices</li>
+                        </ul>
+                        <p><strong>Xcel Energy offers up to $500 in rebates</strong> for residential Level 2 chargers, reducing your net cost significantly.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Do I need a permit to install an EV charger in Minneapolis or St. Paul?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p><strong>Yes, both Minneapolis and St. Paul require electrical permits for Level 2 EV charger installations.</strong></p>
+                        <ul>
+                            <li><strong>Minneapolis:</strong> Residential electrical permit required. Cost: $150-$250. Processing time: 3-5 business days. Inspection required after installation.</li>
+                            <li><strong>St. Paul:</strong> Electrical permit required for any 240V circuit. Cost: $175-$300. Inspection scheduling typically within 2-3 days.</li>
+                            <li><strong>Suburban cities:</strong> Requirements vary by municipality. Most require permits with similar costs and timelines.</li>
+                        </ul>
+                        <p>Most licensed installers handle all permit paperwork and coordinate inspections as part of their service.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Do I need to upgrade my electrical panel for an EV charger?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p><strong>It depends on your current panel capacity and home's electrical load.</strong></p>
+                        <p><strong>You likely need an upgrade if:</strong></p>
+                        <ul>
+                            <li>Your panel is 100 amps or less (most homes built before 1980)</li>
+                            <li>You have fewer than 4-6 empty breaker spaces</li>
+                            <li>Your panel shows signs of corrosion or is a Federal Pacific or Zinsco brand</li>
+                            <li>You plan to add solar panels in the future</li>
+                        </ul>
+                        <p><strong>You may NOT need an upgrade if:</strong></p>
+                        <ul>
+                            <li>Your home has a 200-amp panel with available breaker spaces</li>
+                            <li>You don't run many high-draw appliances simultaneously</li>
+                            <li>Your electrician performs a load calculation showing sufficient capacity</li>
+                        </ul>
+                        <p><strong>Panel upgrade cost:</strong> $1,800-$3,500 for 100A to 200A upgrade in the Twin Cities area.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>What rebates and incentives are available for EV charger installation in Minnesota?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p><strong>Xcel Energy Rebate:</strong> Up to $500 for residential Level 2 charger installation. Requirements:</p>
+                        <ul>
+                            <li>Must be Xcel Energy customer</li>
+                            <li>Charger must be installed by licensed electrician</li>
+                            <li>Application must be submitted within 90 days of installation</li>
+                            <li>Eligible for one rebate per residential address</li>
+                        </ul>
+                        <p><strong>Federal Tax Credit:</strong> 30% of installation costs up to $1,000 under the Alternative Fuel Vehicle Refueling Property Credit (extended through 2032).</p>
+                        <p><strong>Combined savings example:</strong> $1,500 installation - $500 Xcel rebate - $450 federal tax credit = $550 net cost.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>How long does EV charger installation take?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p><strong>Typical timeline:</strong></p>
+                        <ul>
+                            <li><strong>Basic installation (no panel upgrade):</strong> 4-6 hours on-site. Total timeline including permit: 7-10 days from booking to charging.</li>
+                            <li><strong>With panel upgrade:</strong> 6-8 hours on-site, often requires two visits. Total timeline: 2-3 weeks including permit and inspection.</li>
+                            <li><strong>Permit processing:</strong> 3-5 business days in Minneapolis/St. Paul</li>
+                            <li><strong>Inspection scheduling:</strong> Usually 2-4 days after installation completion</li>
+                        </ul>
+                        <p>Many Twin Cities installers offer same-week or next-week scheduling during non-peak seasons.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Can I install an EV charger myself, or do I need a licensed electrician?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p><strong>Minnesota law requires a licensed electrician for EV charger installations.</strong></p>
+                        <p>DIY installation is not permitted because:</p>
+                        <ul>
+                            <li>240V circuits require professional installation under MN electrical code</li>
+                            <li>Permits can only be pulled by licensed electricians</li>
+                            <li>Insurance and liability issues if installation causes fire or electrical problems</li>
+                            <li>Xcel Energy rebates require licensed installer documentation</li>
+                            <li>Warranty claims may be denied for non-professional installations</li>
+                        </ul>
+                        <p>All installers listed in this directory hold valid Minnesota electrical licenses.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>What's the difference between Level 2 and Level 3 EV chargers?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p><strong>Level 2 (Recommended for homes):</strong></p>
+                        <ul>
+                            <li><strong>Voltage:</strong> 240V (same as electric dryer)</li>
+                            <li><strong>Charging speed:</strong> 25-30 miles of range per hour</li>
+                            <li><strong>Full charge time:</strong> 6-8 hours for most EVs</li>
+                            <li><strong>Cost:</strong> $800-$2,500 installed</li>
+                            <li><strong>Best for:</strong> Overnight home charging</li>
+                        </ul>
+                        <p><strong>Level 3 / DC Fast Charging (Commercial only):</strong></p>
+                        <ul>
+                            <li><strong>Voltage:</strong> 480V+ (requires 3-phase power)</li>
+                            <li><strong>Charging speed:</strong> 100-250 miles in 20-30 minutes</li>
+                            <li><strong>Cost:</strong> $50,000-$150,000+ installed</li>
+                            <li><strong>Best for:</strong> Commercial locations, highway corridors</li>
+                            <li><strong>Not available for typical residential properties</strong> due to electrical infrastructure requirements</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>How do I choose between different EV charger brands?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p><strong>Popular Level 2 chargers in Minnesota:</strong></p>
+                        <ul>
+                            <li><strong>Tesla Wall Connector:</strong> $450-$550. Best for Tesla owners. Sleek design, 48A charging, WiFi-enabled.</li>
+                            <li><strong>ChargePoint Home Flex:</strong> $700-$800. Universal J1772 connector. Excellent app integration. Adjustable amperage (16-50A).</li>
+                            <li><strong>Grizzl-E:</strong> $400-$500. Most affordable quality option. Cold-weather rated for Minnesota. Simple, reliable, no WiFi.</li>
+                            <li><strong>JuiceBox 40:</strong> $600-$700. Smart features, voice control. Good for those wanting detailed energy tracking.</li>
+                        </ul>
+                        <p><strong>Key factors:</strong></p>
+                        <ul>
+                            <li>Your EV brand (Tesla owners often prefer Tesla Wall Connector)</li>
+                            <li>Desired charging speed (32A vs 40A vs 48A)</li>
+                            <li>Smart features needed (WiFi, scheduling, energy monitoring)</li>
+                            <li>Cold weather durability (important for Minnesota)</li>
+                            <li>Budget</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- FAQ Schema -->
+        <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "How much does EV charger installation cost in the Twin Cities?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "EV charger installation in Minneapolis-St. Paul typically costs $800-$2,500, depending on distance from electrical panel, panel upgrade requirements, and permit fees. Xcel Energy offers up to $500 in rebates for residential Level 2 chargers."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Do I need a permit to install an EV charger in Minneapolis or St. Paul?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes, both Minneapolis and St. Paul require electrical permits for Level 2 EV charger installations. Minneapolis costs $150-$250 with 3-5 days processing. St. Paul costs $175-$300. Most licensed installers handle all permit paperwork."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Do I need to upgrade my electrical panel for an EV charger?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "You likely need a panel upgrade if your panel is 100 amps or less, you have fewer than 4-6 empty breaker spaces, or your panel shows signs of corrosion. Panel upgrades from 100A to 200A cost $1,800-$3,500 in the Twin Cities."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What rebates are available for EV charger installation in Minnesota?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Xcel Energy offers up to $500 rebate for residential Level 2 charger installation. Federal tax credit provides 30% of installation costs up to $1,000. Combined savings can reduce net installation cost significantly."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How long does EV charger installation take?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Basic installation takes 4-6 hours on-site with 7-10 days total including permits. With panel upgrade, expect 6-8 hours installation and 2-3 weeks total timeline. Many Twin Cities installers offer same-week scheduling."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Can I install an EV charger myself?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "No. Minnesota law requires a licensed electrician for EV charger installations. 240V circuits require professional installation under MN electrical code, permits can only be pulled by licensed electricians, and Xcel Energy rebates require licensed installer documentation."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What's the difference between Level 2 and Level 3 EV chargers?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Level 2 uses 240V and charges 25-30 miles per hour, costs $800-$2,500 installed, best for home overnight charging. Level 3 (DC Fast Charging) uses 480V+, charges 100-250 miles in 20-30 minutes, costs $50,000-$150,000+ installed, and is only for commercial locations."
+              }
+            }
+          ]
+        }
+        </script>
+    </section>
+
+    <!-- Remaining sections... -->
+    <section class="featured-section" id="installers">
+        <div class="container">
+            <h2 class="section-title">More Trusted Installers</h2>
+            
+            <div class="featured-grid" id="featured-grid">
+                <!-- Rendered dynamically from installers.json -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Standard Directory -->
+    <section class="directory-section">
+        <div class="container">
+            <h2 class="section-title">All Verified Installers</h2>
+            
+            <div class="directory-grid" id="directory-grid">
+                <!-- Rendered dynamically from installers.json -->
+            </div>
+
+            <div class="view-more">
+                <button class="btn-outline">View All 30 Installers →</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Teaser -->
+    <section class="education-section" id="guides">
+        <div class="container">
+            <h2 class="section-title">EV Charging Guides</h2>
+            <p class="section-intro">Everything you need to know about installing a home EV charger in Minnesota.</p>
+            
+            <div class="education-grid">
+                <a href="#" class="education-card">
+                    <span class="education-icon">📋</span>
+                    <h3>Permit Requirements</h3>
+                    <p>What permits you need in Minneapolis, St. Paul, and suburbs, who handles them, and typical costs</p>
+                </a>
+                
+                <a href="#" class="education-card">
+                    <span class="education-icon">🔌</span>
+                    <h3>Panel Upgrades</h3>
+                    <p>When you need a panel upgrade, 100A vs 200A comparison, and cost breakdown</p>
+                </a>
+                
+                <a href="#" class="education-card">
+                    <span class="education-icon">💰</span>
+                    <h3>Rebates & Incentives</h3>
+                    <p>Xcel Energy rebates ($500), federal tax credits (30%), and application process</p>
+                </a>
+                
+                <a href="#" class="education-card">
+                    <span class="education-icon">⚡</span>
+                    <h3>Level 2 Charger Guide</h3>
+                    <p>Comparing Tesla Wall Connector, ChargePoint, Grizzl-E, and other popular home chargers</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Get Listed CTA -->
+    <section class="cta-section" id="get-listed">
+        <div class="container">
+            <div class="cta-content">
+                <h2 class="cta-title">Licensed MN EV Installer?</h2>
+                <p class="cta-text">Join our curated directory and connect with homeowners ready to install. Featured carousel listings and enhanced profiles available.</p>
+                <a href="mailto:hello@tcevinstallers.com" class="btn-primary-large">Get Listed</a>
+                <a href="./estimate.html" class="btn-primary-large" style="margin-left:12px;background:#fff;color:#2563eb;">Cost Estimator</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <span class="logo-icon">⚡</span>
+                    <span class="logo-text">Twin Cities EV Installer Directory</span>
+                    <p class="footer-tagline">Vetted, licensed EV charger installers across the Twin Cities metropolitan area</p>
+                    <p class="footer-tagline">All installers are independently licensed and insured in Minnesota</p>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="footer-col">
+                        <h4>Installers</h4>
+                        <a href="#featured">Featured Installers</a>
+                        <a href="#installers">All Installers</a>
+                        <a href="#service-areas">Service Areas</a>
+                        <a href="#get-listed">Get Listed</a>
+                    </div>
+                    
+                    <div class="footer-col">
+                        <h4>Resources</h4>
+                        <a href="#faq">Installation FAQ</a>
+                        <a href="#guides">Installation Guides</a>
+                        <a href="#">Permits & Rebates</a>
+                        <a href="#">Cost Calculator</a>
+                    </div>
+                    
+                    <div class="footer-col">
+                        <h4>About</h4>
+                        <a href="#">About Us</a>
+                        <a href="mailto:hello@tcevinstallers.com">Contact</a>
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms of Service</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Twin Cities EV Installer Directory. All installers are independently licensed and insured in Minnesota.</p>
+                <p class="footer-disclaimer">Last updated: January 2025</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+    // Load installer data and render all sections
+    (async function() {
+      const response = await fetch('installers.json');
+      const installers = await response.json();
+
+      // Derive tier from featured/verified fields
+      function getTier(inst) {
+        if (inst.featured === true) return 'featured';
+        if (inst.verified === true) return 'standard';
+        return 'basic';
+      }
+
+      // Add tier to each installer
+      installers.forEach(inst => { inst.tier = getTier(inst); });
+
+      const featured = installers.filter(i => i.tier === 'featured');
+      const standard = installers.filter(i => i.tier === 'standard');
+      const basic = installers.filter(i => i.tier === 'basic');
+      const allInstallers = installers;
+
+      // Log counts
+      console.log('--- Installer Counts ---');
+      console.log('Total:', installers.length);
+      console.log('Featured (carousel):', featured.length);
+      console.log('Standard (trusted grid):', standard.length);
+      console.log('Basic:', basic.length);
+      console.log('All Verified section:', allInstallers.length);
+
+      // Helper: get tagline/specialty text
+      function getTagline(inst) {
+        if (inst.description) return inst.description;
+        if (inst.specialties && inst.specialties.length) return inst.specialties.slice(0, 3).join(', ');
+        return inst.city + ' EV Installer';
+      }
+
+      // Helper: get short tagline for cards
+      function getShortTagline(inst) {
+        if (inst.specialties && inst.specialties.length) return inst.specialties[0];
+        return inst.city + ' Area';
+      }
+
+      // Render carousel cards (featured tier)
+      const carouselTrack = document.getElementById('carousel-track');
+      if (carouselTrack) {
+        if (featured.length === 0) {
+          // No featured installers - show message or hide section
+          carouselTrack.innerHTML = '<p style="padding:20px;color:#666;">No featured installers yet.</p>';
+        } else {
+          carouselTrack.innerHTML = featured.map((inst, idx) => `
+            <article class="carousel-card${idx === 0 ? ' active' : ''}" itemscope itemtype="https://schema.org/LocalBusiness">
+              <div class="carousel-image">
+                <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=800&h=600&fit=crop" alt="${inst.name} EV charger installation" itemprop="image">
+              </div>
+              <div class="carousel-content">
+                <h3 class="company-name" itemprop="name">${inst.name}</h3>
+                <p class="company-tagline">${inst.city} Area</p>
+                <meta itemprop="priceRange" content="$$">
+
+                <div class="installer-meta">
+                  <span class="meta-badge">Verified Installer</span>
+                  ${inst.reviewsText ? `<span class="meta-badge">${inst.reviewsText}</span>` : ''}
+                </div>
+
+                <div class="service-badges">
+                  ${(inst.badges || []).slice(0, 3).map(b => `<span class="badge">${b}</span>`).join('')}
+                </div>
+
+                <p class="company-pitch" itemprop="description">${getTagline(inst)}</p>
+
+                <div class="carousel-cta">
+                  ${inst.phone ? `<a href="tel:${inst.phoneTel}" class="btn-primary" itemprop="telephone">${inst.phone}</a>` : ''}
+                  ${inst.website ? `<a href="${inst.website}" class="btn-secondary" target="_blank">Visit Website</a>` : `<a href="#contact-${inst.id}" class="btn-secondary">Request Quote</a>`}
+                </div>
+
+                <div itemprop="address" itemscope itemtype="https://schema.org/PostalAddress" style="display:none;">
+                  <span itemprop="addressLocality">${inst.city}</span>
+                  <span itemprop="addressRegion">MN</span>
+                </div>
+              </div>
+            </article>
+          `).join('');
+        }
+      }
+
+      // Render featured grid (standard tier = "More Trusted Installers")
+      const featuredGrid = document.getElementById('featured-grid');
+      if (featuredGrid) {
+        const logos = ['⚡', '🔋', '⚙️', '🔌', '🏢'];
+        // Show first 10 standard installers in this section
+        const displayStandard = standard.slice(0, 10);
+        featuredGrid.innerHTML = displayStandard.map((inst, idx) => `
+          <article class="featured-card" itemscope itemtype="https://schema.org/LocalBusiness">
+            <div class="card-logo">
+              <div class="logo-placeholder">${logos[idx % logos.length]}</div>
+            </div>
+            <h3 class="card-company" itemprop="name">${inst.name}</h3>
+            <p class="card-specialty">${getShortTagline(inst)}</p>
+
+            <div class="card-badges">
+              ${(inst.badges || []).slice(0, 3).map(b => `<span class="mini-badge">${b}</span>`).join('')}
+            </div>
+
+            <p class="card-description">${getTagline(inst)}</p>
+
+            <div class="card-contact">
+              ${inst.phone ? `<a href="tel:${inst.phoneTel}" class="contact-link" itemprop="telephone">📞 ${inst.phone}</a>` : ''}
+              ${inst.website ? `<a href="${inst.website}" class="contact-link" target="_blank">🔗 Website</a>` : ''}
+            </div>
+          </article>
+        `).join('');
+      }
+
+      // Render directory grid (all installers)
+      const directoryGrid = document.getElementById('directory-grid');
+      if (directoryGrid) {
+        const logos = ['⚡', '🔋', '⚙️', '🔌'];
+        // Show all installers in compact format
+        directoryGrid.innerHTML = allInstallers.map((inst, idx) => `
+          <article class="standard-card" itemscope itemtype="https://schema.org/LocalBusiness">
+            <div class="standard-logo">${logos[idx % logos.length]}</div>
+            <h4 class="standard-company" itemprop="name">${inst.name}</h4>
+            <div class="standard-badges">
+              ${(inst.badges || []).slice(0, 3).map(b => `<span class="tiny-badge">${b.split(' ')[0]}</span>`).join('')}
+            </div>
+            <p class="standard-pitch">${inst.city} specialist</p>
+            <div class="standard-contact">
+              ${inst.phone ? `<a href="tel:${inst.phoneTel}" itemprop="telephone">📞</a>` : ''}
+              ${inst.website ? `<a href="${inst.website}" target="_blank">🔗</a>` : ''}
+            </div>
+          </article>
+        `).join('');
+      }
+
+      // Update installer count in hero
+      const statNumber = document.querySelector('.stat-number');
+      if (statNumber) {
+        statNumber.textContent = installers.length;
+      }
+
+      // Update "View All" button text
+      const viewAllBtn = document.querySelector('.view-more .btn-outline');
+      if (viewAllBtn) {
+        viewAllBtn.textContent = `View All ${installers.length} Installers →`;
+      }
+    })();
+    </script>
+</body>
+</html>
