@@ -254,10 +254,12 @@
   };
 
   // Handle contact form submission
-  function handleContactSubmit(e) {
+  async function handleContactSubmit(e) {
     e.preventDefault();
     const form = e.target;
     const formData = new FormData(form);
+    const submitBtn = form.querySelector('button[type="submit"]');
+    const modalContent = document.querySelector('.modal-content');
 
     const lead = {
       name: formData.get('name'),
@@ -266,29 +268,53 @@
       zip: formData.get('zip'),
       evBrand: formData.get('evBrand'),
       message: formData.get('message'),
-      calcData: window.calcData || null,
-      timestamp: new Date().toISOString()
+      calcData: window.calcData || null
     };
 
-    // Save to localStorage
-    const leads = JSON.parse(localStorage.getItem('calculatorLeads') || '[]');
-    leads.push(lead);
-    localStorage.setItem('calculatorLeads', JSON.stringify(leads));
-
-    // Show success
-    const modalContent = document.querySelector('.modal-content');
-    if (modalContent) {
-      modalContent.innerHTML = `
-        <div class="modal-success">
-          <span class="success-icon">✓</span>
-          <h3>Request Submitted!</h3>
-          <p>A licensed installer will contact you within 24 hours.</p>
-          <button type="button" class="btn-primary" onclick="closeContactModal()">Close</button>
-        </div>
-      `;
+    // Show loading state
+    if (submitBtn) {
+      submitBtn.disabled = true;
+      submitBtn.textContent = 'Submitting...';
     }
 
-    console.log('Lead captured:', lead);
+    try {
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(lead)
+      });
+
+      const result = await response.json();
+
+      if (response.ok && result.success) {
+        // Show success
+        if (modalContent) {
+          modalContent.innerHTML = `
+            <div class="modal-success">
+              <span class="success-icon">✓</span>
+              <h3>Request Submitted!</h3>
+              <p>A licensed installer will contact you within 24 hours.</p>
+              <button type="button" class="btn-primary" onclick="closeContactModal()">Close</button>
+            </div>
+          `;
+        }
+      } else {
+        throw new Error(result.error || 'Submission failed');
+      }
+    } catch (error) {
+      console.error('Form submission error:', error);
+      // Show error
+      if (modalContent) {
+        modalContent.innerHTML = `
+          <div class="modal-success">
+            <span class="success-icon" style="background:#ef4444;">✕</span>
+            <h3>Something went wrong</h3>
+            <p>Please try again or call us directly.</p>
+            <button type="button" class="btn-primary" onclick="location.reload()">Try Again</button>
+          </div>
+        `;
+      }
+    }
   }
 
   // Initialize calculator
